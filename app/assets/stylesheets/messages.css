@@ -10,15 +10,13 @@ a{
   display: flex;
 }
 
+/*********************************************
+サイドバー
+**********************************************/
 .side-bar {
   width: 300px;
   height: 100vh;
   padding: 0, 20px;
-}
-
-.room-container {
-  width: calc(100vw - 300px);
-  padding: 0, 40px;
 }
 
 .side-bar-top {
@@ -34,26 +32,10 @@ a{
   background-color: #2f3e51;
   padding: 0 20px;
   height: calc(100vh - 100px);
+  overflow: scroll;
 }
 
-.room-bar {
-  background-color: #fff;
-  height: 100px;
-}
-
-.room-main {
-  background-color: #fafafa;
-  padding-top: 46px;
-  height: calc(100vh - 100px - 90px);
-}
-
-.room-form {
-  background-color: #ddd;
-  height: 90px;
-  padding: 20px 0;
-}
-
-.room-create a{
+.create-room a{
   display: block;
   border: 1px solid lightblue;
   padding: 14px;
@@ -75,6 +57,45 @@ a{
   color: #fff;
 }
 
-.room-list {
-  overflow: scroll:
+/**********************************************
+メイン
+***********************************************/
+.room-container {
+  width: calc(100vw - 300px);
+}
+
+.room-bar {
+  background-color: #fff;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.room-main {
+  background-color: #fafafa;
+  margin-top: 46px;
+  height: calc(100vh - 100px - 90px);
+  padding: 0 40px;
+}
+
+.room-form {
+  background-color: #ddd;
+  height: 90px;
+  padding: 20px 40px;
+}
+
+.current-room {
+  margin-top: 36px;
+  color: #333;
+  font-size: 24px;
+}
+
+.quit-room {
+  padding-top: 40px;
+}
+
+.quit-room a{
+  border: 1px solid darkred;
+  padding: 20px;
 }
