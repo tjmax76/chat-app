@@ -5,12 +5,7 @@
   </div>
   <div class="room-main">
     <div class="posts">
-      <div class="post">
-        <div class="post-name">Tom
-          <div class="post-date">2020/3/3(Wed) 12:43:30</div>
-        </div>
-        <div class="post-content">おはよう</div>
-      </div>
+      <%= render partial: 'message', collection: @messages %>
     </div>
   </div>
   <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
