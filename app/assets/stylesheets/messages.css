@@ -78,13 +78,6 @@ a{
   padding: 0 40px;
 }
 
-.room-form {
-  background-color: #ddd;
-  height: 90px;
-  padding: 20px 40px;
-  display: flex;
-}
-
 .current-room {
   margin-top: 36px;
   color: #333;
@@ -129,28 +122,34 @@ a{
   margin-top: 46px;
 }
 
-.post-form input{
-  padding: 0 10px;
-  width: 100%;
-  height: 50px;
-  border-style: none;
-}
-
-.post-form {
-  width: 100%;
+.form {
+  background-color: #DDDDDD;
+  height: 90px;
+  padding: 20px 40px;
   display: flex;
-  background-color: #fff;
 }
 
-.send-btn input{
- height: 50px;
- line-height: 50px;
- padding: 0 20px;
- background-color: #38aef0;
- color: #fff;
- font-size: 16px; 
- margin-left: 15px;
- border: none;
+.form-input {
+  background-color: white;
+  display: flex;
+  width: 100%;
+}
+
+.form-message {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
 }
 
 .form-image {
